@@ -88,6 +88,7 @@ export default class InfoBox extends Component {
 				i++;
 			}
 
+			console.log(this.props.data.title, images.length)
 			if (images.length > 0) {
 				className += " has-images";
 			}
@@ -104,7 +105,7 @@ export default class InfoBox extends Component {
 					{
 						breakpoint: 1750,
 						settings: {
-							slidesToShow: 2
+							slidesToShow: 1
 						}
 					},
 					{
@@ -133,7 +134,7 @@ export default class InfoBox extends Component {
 						<h1 className="info-box-title">{this.props.data.title}</h1>
 						<h3 className="info-box-date">{this.props.data.date}</h3>
 						<h5 className="info-box-info">{this.props.data.info}</h5>
-						<p className="info-box-text">{this.props.data.text}</p>
+						<p className="info-box-text" dangerouslySetInnerHTML={{__html: this.props.data.text}}></p>
 						<div className="info-box-links">
 							{links}
 						</div>

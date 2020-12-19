@@ -17,10 +17,7 @@ export default class ProjectsPage extends Component {
 			}
 		}
 
-		return <div style={{
-			width: '100%',
-			overflow: 'hidden'
-		}}>
+		return <div className="info-box-container">
 			{infoBoxes}
 		</div>
 	}

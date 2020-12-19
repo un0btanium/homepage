@@ -107,21 +107,6 @@ code {
 
 
 
-
-/* #particle-background {
-  background: transparent;
-  z-index: -10;
-  position: fixed;
-  display: block;
-  top: 0;
-  left: 0;
-  filter: blur(6px);
-  -webkit-filter: blur(6px);
-  -ms-webkit-filter: blur(6px);
-  -moz-webkit-filter: blur(6px);
-  -khtml-webkit-filter: blur(6px);
-} */
-
 #particle-background {
 	position: fixed;
 	width: 100%;
@@ -144,6 +129,9 @@ code {
 }
 
 
+.info-box-container {
+	overflow: hidden !important;
+}
 
 .info-box {
 	color: black;
@@ -235,17 +223,30 @@ code {
 	}
 }
 
-@media screen and (min-width: 1300px) and (max-width: 3000px)  {
+@media screen and (min-width: 1300px) and (max-width: 2500px)  {
 	.info-box {
 		margin: 60px 100px 60px 100px;
 		width: 72.5%;
 	}
 }
 
-@media screen and (min-width: 3000px) {
+
+
+@media screen and (max-width: 2500px) {
+	.info-box-container {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 2500px) {
 	.info-box {
-		margin: 50px 250px 50px 250px;
-		width: 35%;
+		margin: 60px 100px 60px 100px;
+		width: 72.5%;
+	}
+
+	.info-box-container {
+		width: 2000px;
+		margin: auto;
 	}
 }
 
@@ -362,6 +363,12 @@ code {
 	.image-container {
 		display: none;
 	}
+	
+	.image-slider-container img {
+		max-width: 800px;
+		max-height: 400px;
+		padding: 0px 50px 0px 50px;
+	}
 }
 
 
@@ -372,7 +379,7 @@ code {
 @media screen and (min-width: 1300px) and (max-width: 1750px) {
 
 	.info-box.has-images {
-		margin-bottom: 200px;
+		margin-bottom: 375px;
 	}
 	
 	.info-box-images-container-relative {
@@ -481,9 +488,10 @@ code {
 	}
 	.image-slider img.selected {
 		padding: 0px;
+		border: 3px #adb6c2 solid;
 	}
 	.image-slider img:hover {
-		opacity: 0.85;
+		opacity: 0.80;
 	}
 
 
@@ -512,6 +520,8 @@ code {
 	.image-container img {
 		max-width: 800px;
 		max-height: 400px;
+		width: auto;
+		height: auto;
 		padding: 0px 50px 0px 50px;
 	}
 	.info-box:nth-child(2n+1) .image-container img {
