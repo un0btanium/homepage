@@ -16,7 +16,7 @@ import NavItem from 'react-bootstrap/NavItem';
 import HomePage from './components/pages/home-page.component';
 import HighlightsPage from './components/pages/highlights-page.component';
 import ProjectsPage from './components/pages/projects-page.component';
-import AboutPage from './components/pages/about-page.component';
+import ContactPage from './components/pages/contact-page.component';
 // TODO ImpressumPage
 
 
@@ -59,7 +59,7 @@ class App extends Component {
 								<NavItem className="px-sm-4 text-uppercase text-expanded"><Nav.Link as={Link} variant="light" to="/homepage/" onClick={ () => { this.setState({ titleText: "WELCOME" }); }}><b>Home</b></Nav.Link></NavItem>
 								<NavItem className="px-sm-4 text-uppercase text-expanded"><Nav.Link as={Link} variant="light" to="/homepage/highlights"  onClick={ () => { this.setState({ titleText: "HIGHLIGHTS" }); }}><b>Highlights</b></Nav.Link></NavItem>
 								<NavItem className="px-sm-4 text-uppercase text-expanded"><Nav.Link as={Link} variant="light" to="/homepage/projects"  onClick={ () => { this.setState({ titleText: "PROJECTS" }); }}><b>All Projects</b></Nav.Link></NavItem>
-								<NavItem className="px-sm-4 text-uppercase text-expanded"><Nav.Link as={Link} variant="light" to="/homepage/about"  onClick={ () => { this.setState({ titleText: "ABOUT ME" }); }}><b>About Me</b></Nav.Link></NavItem>
+								<NavItem className="px-sm-4 text-uppercase text-expanded"><Nav.Link as={Link} variant="light" to="/homepage/contact"  onClick={ () => { this.setState({ titleText: "CONTACT" }); }}><b>Contact</b></Nav.Link></NavItem>
 							</Nav>
 						</Navbar.Collapse>
 					</Navbar>
@@ -79,8 +79,8 @@ class App extends Component {
 						render={(props) => <ProjectsPage {...props}/>}
 					/>
 					<Route exact
-						path="/homepage/about"
-						render={(props) => <AboutPage {...props}/>}
+						path="/homepage/contact"
+						render={(props) => <ContactPage {...props}/>}
 					/>
 					<Route render={(props) => <HomePage {...props}
 							{...this.state}
