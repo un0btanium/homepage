@@ -3,8 +3,8 @@ var data = {
 		{
 			title: "Personal Homepage",
 			date: "December 2020",
-			info: "",
-			text: "",
+			info: "A custom personal homepage to display various projects which I created and contributed over the years",
+			text: "You are reading on this homepage right now :D",
 		},
 		{
 			title: "Star Citizen - Road to Dynamic Server Meshing",
