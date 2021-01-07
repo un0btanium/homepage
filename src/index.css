@@ -503,7 +503,7 @@ code {
 		border-radius: 10px;
 	}
 	.info-box:nth-child(2n+1) .image-container {
-		left: 550px;
+		left: 600px;
 		background-color: #0377fc;
 		-webkit-transform: skew(15deg);
 		-moz-transform: skew(15deg);
