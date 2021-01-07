@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGraduationCap, faUserGraduate, faFolderOpen, faAddressCard, faStar } from '@fortawesome/free-solid-svg-icons';
+import { /* faGraduationCap,*/ faUserGraduate, faUniversity, faFolderOpen, faAddressCard, faStar } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default class HomePage extends Component {
@@ -22,7 +22,7 @@ export default class HomePage extends Component {
 				<div className="education">
 					<div className="box">
 						<FontAwesomeIcon
-							icon={faGraduationCap}
+							icon={faUniversity}
 							style={{margin: '10px auto 20px auto'}}
 							size="3x"
 						/>
@@ -47,7 +47,7 @@ export default class HomePage extends Component {
 
 			<div className="links-container">
 				<div className="links">
-					<a className="box" href="https://github.com/un0btanium" target="_blank">
+					<a className="box" href="https://github.com/un0btanium" target="_blank" rel="noopener noreferrer">
 						<FontAwesomeIcon
 							icon={faGithub}
 							style={{margin: '10px auto 20px auto'}}

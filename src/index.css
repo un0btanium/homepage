@@ -582,6 +582,7 @@ code {
 	flex-flow: column nowrap;
 	padding: 15px;
 	border-radius: 10px;
+	min-width: 175px;
 	background-color: #0377fc;
 	color: white;
 	font-size: medium;
