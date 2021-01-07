@@ -535,3 +535,83 @@ code {
 		transform: skew(15deg);
 	}
 }
+
+
+
+
+
+.landing-page {
+	text-align: center;	
+}
+
+.landing-page {
+	color: white;
+}
+
+
+.introduction-text {
+	margin: 60px 0px 60px 0px;
+}
+
+.introduction-text .introduction {
+	max-width: 950px;
+	font-size: larger;
+	text-align: center;
+	color: white;
+	margin: auto;
+}
+
+
+
+
+.education-container {
+	background-color: #adb6c2;
+	margin: 60px 0px 80px 0px;
+	padding: 30px;
+}
+
+.education-container .education {
+	display: flex;
+	max-width: 500px;
+	flex-flow: row nowrap;
+	margin: auto;
+}
+
+.education-container .education .box {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #0377fc;
+	color: white;
+	font-size: medium;
+	font-weight: bold;
+	margin: auto;
+}
+
+
+.links-container {
+	background-color: #adb6c2;
+	margin: 80px 0px 80px 0px;
+	padding: 30px;
+}
+
+.links-container .links {
+	display: flex;
+	max-width: 800px;
+	flex-flow: row nowrap;
+	margin: auto;
+}
+
+.links-container .links .box {
+	display: flex;
+	flex-flow: column nowrap;
+	background-color: #c9711e;
+	padding: 15px;
+	min-width: 125px;
+	border-radius: 10px;
+	color: white;
+	font-size: medium;
+	font-weight: bold;
+	margin: auto;
+}
