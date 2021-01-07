@@ -12,7 +12,7 @@ export default class HomePage extends Component {
 			
 			<div className="introduction-text">
 				<div className="introduction">
-					Post-graduate Computer Science student (M.Sc.), Java and Full-Stack Developer.<br/>
+					Postgraduate Computer Science student (M.Sc.), Java and Full-Stack Developer.<br/>
 					Highly capable programmer with a wide range of programming and software engineering experiences.<br/>
 					Interested in creating enjoyable, informative and transformative experiences for the end user.
 				</div>
