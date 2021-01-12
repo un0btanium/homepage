@@ -110,7 +110,10 @@ var data = {
 				}
 			],
 			images: [
-				"tft-cheatsheet/image1.png"
+				"tft-cheatsheet/image1.png",
+				"tft-cheatsheet/image2.png",
+				"tft-cheatsheet/image3.png",
+				"tft-cheatsheet/image4.png"
 			]
 		},
 		{
@@ -174,8 +177,8 @@ var data = {
 		{
 			title: "Genetic Algorithms",
 			date: "Juni 2017",
-			info: "Java",
-			text: "Having a look at genetic algorithms for various path finding problems like the traveling salesman problem. ",
+			info: "Java, gnuplot",
+			text: "Having a look at genetic algorithms for various path finding problems like the traveling salesman problem. The program executed the algorithm multiple times with slightly different parameters to find the best route as well as the paramter setting which required the fewest amount of generations. The results of all runs were plotted as a 3D diagram.",
 			images: [
 				"genetic-algorithms/image1.png",
 				"genetic-algorithms/image2.png",
@@ -200,7 +203,7 @@ var data = {
 			title: "Champion Challenge - RIOT API Challenge 2016",
 			date: "May 2016",
 			info: "Node.js, Express, MongoDB, AngularJS, League of Legends API",
-			text: "This was <b>my entry in the League of Legends RIOT API Challenge in 2016</b> where participants had <b>three weeks time</b> to create something with the recently released mastery points. For this project <b>I taught myself</b> Node.js, Express, MongoDB and Angular to create a website which would <b>allow users to enter weekly competitions</b>. Players would gather as many mastery points on a champion as possible by playing the game and would be retrieved by my application via the League of Legends API. Players would then be <b>placed on a leaderboard</b> to reflect their current ranking. At the end of a contest <b>top players received rewards in the form of collectible items</b> from the game. Those items saved and displayed the champion name and the accumulated points from that contest it was won from. Although this project did not win any prices in the API contents it still <b>made me learn a lot of new skills</b>. My newly gained knowledge was <b>thoroughly documented in the github readme file</b>.",
+			text: "This was <b>my entry in the League of Legends RIOT API Challenge in 2016</b> where participants had <b>three weeks time</b> to create something with the recently released mastery points. For this project <b>I taught myself</b> Node.js, Express, MongoDB and Angular to create a website which would <b>allow users to enter weekly competitions</b>. Players would gather as many mastery points on a champion as possible by playing the game and would be retrieved by my application via the League of Legends API. Players would then be <b>placed on a leaderboard</b> to reflect their current ranking. At the end of a contest <b>top players received rewards in the form of collectible items</b> from the game. Those items saved and displayed the champion name and the accumulated points from that contest it was won from. Although this project did not win any prices in the API contest it still <b>made me learn a lot of new skills</b>. My newly gained knowledge was <b>thoroughly documented in the github readme file</b>.",
 			links: [
 				{
 					website: "github",
