@@ -87,8 +87,7 @@ export default class InfoBox extends Component {
 				)
 				i++;
 			}
-
-			console.log(this.props.data.title, images.length)
+			
 			if (images.length > 0) {
 				className += " has-images";
 			}
