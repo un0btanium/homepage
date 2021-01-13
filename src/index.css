@@ -616,3 +616,36 @@ code {
 	font-weight: bold;
 	margin: auto;
 }
+
+
+.contact-list {
+	width: 60%;
+	margin: auto;
+}
+
+.contact-list .links {
+	margin-top: 50px;
+}
+
+.contact-list .links .link {
+	background-color: #adb6c2;
+	margin: 50px 0px 50px 0px;
+	border-radius: 25px;
+}
+
+.contact-list .links .link .icon-box {
+	display: inline-block;
+	padding: 30px;
+	margin: 20px;
+	background-color: #cad3e0;
+	border-radius: 25px;
+	
+}
+
+.contact-list .links .link .text {
+	display: inline-block;
+	font-family: Raleway, Arial;
+	font-size: 2em;
+	margin: 50px;
+}
+

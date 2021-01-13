@@ -22,23 +22,23 @@ export default class HomePage extends Component {
 				<div className="education">
 					<div className="box">
 						<FontAwesomeIcon
-							icon={faUniversity}
-							style={{margin: '10px auto 20px auto'}}
-							size="3x"
-						/>
-						<div>
-							Master of Science<br/>
-							Computer Science
-						</div>
-					</div>
-					<div className="box">
-						<FontAwesomeIcon
 							icon={faUserGraduate}
 							style={{margin: '10px auto 20px auto'}}
 							size="3x"
 						/>
 						<div>
 							Bachelor of Science<br/>
+							Computer Science
+						</div>
+					</div>
+					<div className="box">
+						<FontAwesomeIcon
+							icon={faUniversity}
+							style={{margin: '10px auto 20px auto'}}
+							size="3x"
+						/>
+						<div>
+							Master of Science<br/>
 							Computer Science
 						</div>
 					</div>
