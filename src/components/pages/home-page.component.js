@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { /* faGraduationCap,*/ faUserGraduate, faUniversity, faFolderOpen, faAddressCard, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap, faUserGraduate, faFolderOpen, faAddressCard, faStar } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default class HomePage extends Component {
@@ -12,7 +12,7 @@ export default class HomePage extends Component {
 			
 			<div className="introduction-text">
 				<div className="introduction">
-					Postgraduate Computer Science student (M.Sc.), Java and Full-Stack Developer.<br/>
+					Master of Science (M.Sc.) graduate in Computer Science, Java and Full-Stack Developer.<br/>
 					Highly capable programmer with a wide range of programming and software engineering experiences.<br/>
 					Interested in creating enjoyable, informative and transformative experiences for the end user.
 				</div>
@@ -22,7 +22,7 @@ export default class HomePage extends Component {
 				<div className="education">
 					<div className="box">
 						<FontAwesomeIcon
-							icon={faUserGraduate}
+							icon={faGraduationCap}
 							style={{margin: '10px auto 20px auto'}}
 							size="3x"
 						/>
@@ -33,7 +33,7 @@ export default class HomePage extends Component {
 					</div>
 					<div className="box">
 						<FontAwesomeIcon
-							icon={faUniversity}
+							icon={faUserGraduate}
 							style={{margin: '10px auto 20px auto'}}
 							size="3x"
 						/>

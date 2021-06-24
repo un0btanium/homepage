@@ -3,12 +3,12 @@ var data = {
 		{
 			title: "Personal Homepage",
 			date: "December 2020",
-			info: "A custom personal homepage to display various projects which I created and contributed over the years",
+			info: "A custom personal homepage to display various projects I created and contributed over the years",
 			text: "You are reading on this homepage right now :D",
 		},
 		{
 			title: "Star Citizen - Road to Dynamic Server Meshing",
-			date: "June 2020",
+			date: "since June 2020",
 			info: "Prezi Presentation - Overview of the Architecture of the Dynamic Server Meshing software system",
 			text: "I have been very excited about the technology that one day will be <b>Star Citizens Dynamic Server Meshing</b>. However, I had trouble finding any great single source of information which gives a good overview and explanation of what it is and how CIG is planning to realize it and what the status currently is. Therefore, I took it upon myself, <b>researched all the information available</b> to us and created <b>a visual and textual explanation as an extensive Prezi presentation with over 100 individual slides</b> for everyone to check out and refer to. All the available information I was able to find can be found in the presentation making it a great source about Dynamic Server Meshing! The sources used were provided at the end of the presentation as well.",
 			links: [
@@ -35,11 +35,14 @@ var data = {
 		},
 		{
 			title: "CodingBuddy",
-			date: "2019-2020",
+			date: "2019-2021",
 			info: "Java, JavaParser, Node.js, Express, MongoDB, React",
-			text: "This website <b>visualizes the execution of Java programs</b>. It allows programming students to write Java code and then provides them with <b>step-by-step statement highlighting</b> at runtime. The goal was to help programming novices to develop a much more <b>intuitive understanding about how the computer executes their code</b>. This project was made possible by creating a <b>custom debugger</b> by parsing the users Java program and <b>injecting custom code</b> at various Abstract Syntax Tree nodes. At runtime, that code calls custom functions which <b>log the execution of each statement</b>. The position information of statements from the parser was used to be able to correctly highlight the executed statement in the frontend editor. This project is <b>currently expanded upon</b> to optionally display the Stack and Heap of the Java Virtual Machine through the Java Platform Debugger Architecture (JPDA). This information could be useful for visualizing more advanced programming concepts.",
+			text: "This website <b>visualizes the execution of Java programs</b>. It allows programming students to write Java code and then provides them with <b>step-by-step statement highlighting</b> at runtime. The goal was to help programming novices to develop a much more <b>intuitive understanding about how the computer executes their code</b>. This project was made possible by creating a <b>custom debugger</b> by parsing the users Java program and <b>injecting custom code</b> at various Abstract Syntax Tree nodes. At runtime, that code calls custom functions which <b>log the execution of each statement</b>. The position information of statements from the parser was used to be able to correctly highlight the executed statement in the frontend editor. This project has been expanded upon to optionally display the <b>Stack and Heap memory information</b> of the Java Virtual Machine through the Java Platform Debugger Architecture (JPDA). This information could be useful for visualizing more advanced programming concepts and datastructures.",
 			images: [
 				"coding-buddy/codingbuddy_forloop.gif",
+				"coding-buddy/image2.png",
+				"coding-buddy/image3.png",
+				"coding-buddy/image4.png",
 			],
 			links: [
 				{
@@ -55,7 +58,7 @@ var data = {
 		},
 		{
 			title: "THM MoCaInfo Indoor 360° Panorama Tour",
-			date: "February 2020",
+			date: "2020-2021",
 			info: "Javascript, HTML, CSS, Marzipano 360° Library, THM Backend Services, JSON Web Tokens",
 			text: "A website was created as a project at university that <b>allows users to explore indoor places via interactive 360° panoramas</b>. It accessed the <b>university's backend databases</b> about Points of Interests and Room Outlines. That information was then presented inside the panorama as <b>clickable hotspots and in the minimap</b>. A lot of effort was made on an <b>editor</b> (locked behind a login) which allows the admin to add, change and remove panoramas as well as link them together through clickable buttons. The backend automatically converts newly added panorama images into the <b>cubemap format</b>. It also supports high resolution images by providing <b>multiple levels of detail by splitting each cubemap face into more and more tiles (1x1, 2x2, 4x4, 8x8, etc.)</b>.",
 			links: [
