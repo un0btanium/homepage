@@ -1,10 +1,40 @@
 var data = {
 	projects: [
 		{
+			title: "Boid Simulation with QuadTree Optimization",
+			date: "October & November 2021",
+			info: "Javascript, p5",
+			text: "A simple <b>Boid flocking implementation</b> optimized with a <b>spatial partitioning Quadtree algorithm</b> to allow for better performance at larger scale simulations. For more varity, there are 5 kinds of boid species, differentiated by color. All boids try to avoid each other, while boids of the same color try to flock together. Most aspects of the simulation and Quadtree can be changed at runtime via sliders and checkboxes. Additional <b>debug modes</b> provides a view of the current Quadtree partitioning of the level as well as statistics to performance. The Quadtree can even be turned off to be able to compare the performance difference.",
+			links: [
+				{
+					website: "github",
+					url: "https://github.com/un0btanium/boids-and-quadtree",
+				},
+				{
+					website: "link",
+					url: "https://un0btanium.github.io/boids-and-quadtree/"
+				}
+				
+			],
+			images: [
+				"boids-and-quadtree/gif1.gif",
+				"boids-and-quadtree/image3.png",
+				"boids-and-quadtree/image2.png",
+				"boids-and-quadtree/image4.png"
+			],
+			isHighlight: true
+		},
+		{
 			title: "Personal Homepage",
 			date: "December 2020",
 			info: "A custom personal homepage to display various projects I created and contributed over the years",
 			text: "You are reading on this homepage right now :D",
+			links: [
+				{
+					website: "github",
+					url: "https://github.com/un0btanium/homepage",
+				}
+			],
 		},
 		{
 			title: "Star Citizen - Road to Dynamic Server Meshing",
