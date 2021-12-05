@@ -334,6 +334,8 @@ var data = {
 			info: "Windows Batch Scripting Files",
 			text: "<b>My first program</b> was a simple batch script that helped me <b>optimize my Windows XP startup sequence</b> because the Windows autostart did not provide the functionality I was looking for. Since my computer took a long time to boot I wanted to start the computer and come back a few minutes later with various programs and game patchers opened and running already. I found out about Windows batch scripting files and created a simple startup program that would one-by-one start my programs with small delays inbetween to give the computer time to open it. While working on this script I found out that more complicated logic was possible as well <b>and shortly after a simple TicTacToe game</b> on the console was created.",
 			images: [
+				"bat-scripts/tictactoe.png",
+				"bat-scripts/startup.png"
 			],
 			isHighlight: true
 		},
