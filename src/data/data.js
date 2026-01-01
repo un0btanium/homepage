@@ -1,20 +1,39 @@
 var data = {
 	projects: [
 		{
+			title: "Hell is Others - Interactive Maps",
+			date: "October & November 2022",
+			info: "JavaScript, React, SVG Canvas, Radix Tree search",
+			text: "An <b>interactive cheatsheet</b> website for the videogame Hell is Others. In the game the players enters a city that contains various locations of interest to do quests; with PvE and PvP mixed in. The website lets the player easily search for areas, NPCs, shops and loot; adding bookmarks for later use. I utilized a Radix Tree data structure for the search functionality and the SVG Canvas to draw the map.",
+			links: [
+				{
+					website: "link",
+					url: "https://un0btanium.github.io/hell-is-others-cheatsheet/map"
+				},
+				{
+					website: "github",
+					url: "https://github.com/un0btanium/hell-is-others-cheatsheet"
+				}
+			],
+			images: [
+				"hell-is-others-interactive-map/image1.png",
+				"hell-is-others-interactive-map/image2.png"
+			]
+		},
+		{
 			title: "Boid Simulation with QuadTree Optimization",
 			date: "October & November 2021",
 			info: "Javascript, p5",
 			text: "A simple <b>Boid flocking implementation</b> optimized with a <b>spatial partitioning Quadtree algorithm</b> to allow for better performance at larger scale simulations. For more varity, there are 5 kinds of boid species, differentiated by color. All boids try to avoid each other, while boids of the same color try to flock together. Most aspects of the simulation and Quadtree can be changed at runtime via sliders and checkboxes. Additional <b>debug modes</b> provides a view of the current Quadtree partitioning of the level as well as statistics to performance. The Quadtree can even be turned off to be able to compare the performance difference.",
 			links: [
 				{
-					website: "github",
-					url: "https://github.com/un0btanium/boids-and-quadtree",
-				},
-				{
 					website: "link",
 					url: "https://un0btanium.github.io/boids-and-quadtree/"
+				},
+				{
+					website: "github",
+					url: "https://github.com/un0btanium/boids-and-quadtree",
 				}
-				
 			],
 			images: [
 				"boids-and-quadtree/gif1.gif",
@@ -26,9 +45,9 @@ var data = {
 		},
 		{
 			title: "Personal Homepage",
-			date: "December 2020",
-			info: "A custom personal homepage to display various projects I created and contributed over the years",
-			text: "You are reading on this homepage right now :D",
+			date: "December 2020 initially created, periodically updated since then",
+			info: "React, JavaScript",
+			text: "A custom personal homepage to display various projects I created and contributed over the years, You are reading on this homepage right now :D",
 			links: [
 				{
 					website: "github",
@@ -38,22 +57,34 @@ var data = {
 		},
 		{
 			title: "Star Citizen - Road to Dynamic Server Meshing",
-			date: "since June 2020",
-			info: "Prezi Presentation - Overview of the Architecture of the Dynamic Server Meshing software system",
-			text: "I have been very excited about the technology that one day will be <b>Star Citizens Dynamic Server Meshing</b>. However, I had trouble finding any great single source of information which gives a good overview and explanation of what it is and how CIG is planning to realize it and what the status currently is. Therefore, I took it upon myself, <b>researched all the information available</b> to us and created <b>a visual and textual explanation as an extensive Prezi presentation with over 100 individual slides</b> for everyone to check out and refer to. All the available information I was able to find can be found in the presentation making it a great source about Dynamic Server Meshing! The sources used were provided at the end of the presentation as well.",
+			date: "June 2020 - July 2025",
+			info: "Prezi Presentation then Custom React Website - Overview of the Architecture of the Game Engine Networking System",
+			text: "I have been very excited about the technology that one day will be <b>Star Citizen's Dynamic Server Meshing</b>. However, back in 2020 I had trouble finding any great single source of information which gives a good overview and explanation of what it is and how CIG is planning to realize it and what the status currently is. Therefore, I took it upon myself, <b>researched all the information available</b> to us and created <b>a visual and textual explanation as an extensive Prezi presentation with over 100 individual slides</b> for everyone to check out and refer to. All the available information I was able to find can be found in the presentation making it a great source about Dynamic Server Meshing! The sources used were provided at the end of the presentation as well. I eventually migrated to a custom React website by utilizing the Puppeteer JS library to create a web scrape script to extract all text and images from the Prezi slides and saved them as markup text and png files.",
 			links: [
+				{
+					website: "link",
+					url: "https://sc-server-meshing.info/"
+				},
+				{
+					website: "link",
+					url: "https://sc-server-meshing.info/wiki"
+				},
 				{
 					website: "star",
 					url: "https://robertsspaceindustries.com/spectrum/community/SC/forum/3/thread/road-to-dynamic-server-meshing-tech-overview-with-"
 				},
 				{
-					website: "link",
+					website: "star",
 					url: "https://prezi.com/view/l5DorjAy1dUz8BoDnuoF/"
+				},
+				{
+					website: "github",
+					url: "https://github.com/un0btanium/sc-server-meshing"
 				}
-				
 			],
 			images: [
 				"road-to-dynamic-server-meshing/image1.png",
+				"road-to-dynamic-server-meshing/image8.png",
 				"road-to-dynamic-server-meshing/image2.png",
 				"road-to-dynamic-server-meshing/image3.png",
 				"road-to-dynamic-server-meshing/image4.png",
@@ -66,7 +97,7 @@ var data = {
 		{
 			title: "CodingBuddy",
 			date: "2019-2021",
-			info: "Java, JavaParser, Node.js, Express, MongoDB, React",
+			info: "Java, JavaParser, Node.js, Express, MongoDB, React, Java Platform Debugger Architecture (JPDA)",
 			text: "This website <b>visualizes the execution of Java programs</b>. It allows programming students to write Java code and then provides them with <b>step-by-step statement highlighting</b> at runtime. The goal was to help programming novices to develop a much more <b>intuitive understanding about how the computer executes their code</b>. This project was made possible by creating a <b>custom debugger</b> by parsing the users Java program and <b>injecting custom code</b> at various Abstract Syntax Tree nodes. At runtime, that code calls custom functions which <b>log the execution of each statement</b>. The position information of statements from the parser was used to be able to correctly highlight the executed statement in the frontend editor. This project has been expanded upon to optionally display the <b>Stack and Heap memory information</b> of the Java Virtual Machine through the Java Platform Debugger Architecture (JPDA). This information could be useful for visualizing more advanced programming concepts and datastructures.",
 			images: [
 				"coding-buddy/codingbuddy_forloop.gif",
@@ -75,6 +106,10 @@ var data = {
 				"coding-buddy/image4.png",
 			],
 			links: [
+				{
+					website: "github",
+					url: "https://github.com/un0btanium/CodingBuddyV2",
+				},
 				{
 					website: "github",
 					url: "https://github.com/un0btanium/Coding-Website",
@@ -87,14 +122,14 @@ var data = {
 			isHighlight: true
 		},
 		{
-			title: "THM MoCaInfo Indoor 360° Panorama Tour",
+			title: "THM MoCaInfo Indoor 360° Panorama Tour Viewer",
 			date: "2020-2021",
-			info: "Javascript, HTML, CSS, Marzipano 360° Library, THM Backend Services, JSON Web Tokens",
-			text: "A website was created as a project at university that <b>allows users to explore indoor places via interactive 360° panoramas</b>. It accessed the <b>university's backend databases</b> about Points of Interests and Room Outlines. That information was then presented inside the panorama as <b>clickable hotspots and in the minimap</b>. A lot of effort was made on an <b>editor</b> (locked behind a login) which allows the admin to add, change and remove panoramas as well as link them together through clickable buttons. The backend automatically converts newly added panorama images into the <b>cubemap format</b>. It also supports high resolution images by providing <b>multiple levels of detail by splitting each cubemap face into more and more tiles (1x1, 2x2, 4x4, 8x8, etc.)</b>.",
+			info: "Javascript, HTML, CSS, Marzipano 360° Library, THM Backend Services, JSON Web Tokens, CubeMap Format, LoDs",
+			text: "A website was created as a project at university that <b>allows users to explore indoor places via interactive 360° panoramas</b>. It accessed the <b>university's backend databases</b> about Points of Interests and Room Outlines. That information was then presented inside the panorama as <b>clickable hotspots and in the minimap</b>. A lot of effort was made on an <b>editor</b> (locked behind a login) which allows the admin to add, change and remove panoramas as well as link them together through clickable buttons. The backend automatically converts newly added panorama images into the <b>cubemap format</b>. It also supports high resolution images by providing <b>multiple levels of detail (LoDs) by splitting each cubemap face into more and more tiles (1x1, 2x2, 4x4, 8x8, etc.)</b>.",
 			links: [
 				{
-					website: "link",
-					url: "https://mocainfo.thm.de/moca-360/"
+					website: "github",
+					url: "https://github.com/un0btanium/360-panorama-tour-viewer-and-editor"
 				}
 			],
 			images: [
@@ -109,17 +144,17 @@ var data = {
 		},
 		{
 			title: "Phasmophobia Cheatsheet",
-			date: "October 2019",
+			date: "September 2020 - December 2022",
 			info: "JavaScript, React",
 			text: "An <b>interactive cheatsheet</b> website for the videogame Phasmophobia. In the game the players hunts ghosts by figuring out what type of ghost they are dealing with. They can narrow down their search through various paranormal activities like freezing temperatures, ghost writing, spirit box talking, etc. This website provides an simple overview over all ghost evidence and lets mark and rule out evidence to narrow down their search more easily.",
 			links: [
 				{
-					website: "github",
-					url: "https://github.com/un0btanium/phasmophobia-cheatsheet"
-				},
-				{
 					website: "link",
 					url: "https://un0btanium.github.io/phasmophobia-cheatsheet/"
+				},
+				{
+					website: "github",
+					url: "https://github.com/un0btanium/phasmophobia-cheatsheet"
 				}
 			],
 			images: [
@@ -129,17 +164,17 @@ var data = {
 		},
 		{
 			title: "Teamfight Tactics Cheatsheet",
-			date: "August 2019",
+			date: "July - August 2019",
 			info: "JavaScript, React",
 			text: "An <b>interactive cheatsheet</b> for the League of Legends Teamfight Tactics gamemode. It allows the player to keep track of their items and champions by adding/removing them to then provides them with an overview of the options that they have available.",
 			links: [
 				{
-					website: "github",
-					url: "https://github.com/un0btanium/tft-cheatsheet"
-				},
-				{
 					website: "link",
 					url: "https://un0btanium.github.io/tft-cheatsheet/"
+				},
+				{
+					website: "github",
+					url: "https://github.com/un0btanium/tft-cheatsheet"
 				}
 			],
 			images: [
@@ -151,7 +186,7 @@ var data = {
 		},
 		{
 			title: "Ghost In The Cell AI Bot - CodinGames",
-			date: "March 2019",
+			date: "December 2018 - March 2019",
 			info: "Java",
 			text: "This was a very successful <b>AI graduate course group project</b> at university. This AI bot for the Ghost in the Cell game on the CodinGames website plays against bots of other players. The <b>bot had to manage its resources efficiently</b> by commanding units on a playing field from cell to cell, conquering and upgrading cells to produce more units, send and prepare for bombings and eventually eliminate the opponent. Our <b>bot predicted outcomes</b> into the future to determine the use of <b>various defense and attack strategies</b>. It used a <b>Floyd-Warschall Algorithm for efficient pathfinding</b> between cells to prevent long travel times for units. Various bomb attack and defend strategies were implemented as well. Our bot was able to get into the <b>Top 400</b> bots, almost hitting the gold league as well.",
 			links: [
@@ -233,6 +268,25 @@ var data = {
 			video: "K4iBWZcXoyA"
 		},
 		{
+			title: "Minecraft Minigame - UFO Attack",
+			date: "Early 2016",
+			info: "Minecraft Command Blocks",
+			text: "A small minigame I created with the Minecraft command blocks, arrow draw mechanics and Blaze projectiles' knockback effects. I made a similar minigame years prior with just redstone, but wanted to see what was possible with the command blocks instead, including spawning large UFO structures that contained the Blaze mobs. While I considered it fun to play, but unfortunately it never received any public interest.",
+			links: [
+				{
+					website: "star",
+					url: "https://www.planetminecraft.com/project/ufo-attack-minigame/"
+				}
+			],
+			images: [
+				"minecraft-ufo-attack-minigame/image1.png",
+				"minecraft-ufo-attack-minigame/image2.png",
+				"minecraft-ufo-attack-minigame/image3.png",
+				"minecraft-ufo-attack-minigame/image4.png",
+				"minecraft-ufo-attack-minigame/image5.png"
+			],
+		},
+		{
 			title: "Champion Challenge - RIOT API Challenge 2016",
 			date: "May 2016",
 			info: "Node.js, Express, MongoDB, AngularJS, League of Legends API",
@@ -283,7 +337,23 @@ var data = {
 			links: [
 				{
 					website: "steam",
-					url: "https://steamcommunity.com/id/un0btanium/myworkshopfiles/?appid=4000"
+					url: "https://steamcommunity.com/sharedfiles/filedetails/?id=536282404"
+				},
+				{
+					website: "steam",
+					url: "https://steamcommunity.com/sharedfiles/filedetails/?id=843525860"
+				},
+				{
+					website: "steam",
+					url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1509022683"
+				},
+				{
+					website: "steam",
+					url: "https://steamcommunity.com/sharedfiles/filedetails/?id=966396062"
+				},
+				{
+					website: "steam",
+					url: "https://steamcommunity.com/sharedfiles/filedetails/?id=1358920571"
 				}
 			],
 			images: [
@@ -296,7 +366,6 @@ var data = {
 				"ttt-mapping/image7.jpg",
 			]
 		},
-
 		{
 			title: "ComputerCraft Programs",
 			date: "December 2012 - February 2014",
@@ -309,7 +378,7 @@ var data = {
 				},
 				{
 					website: "link",
-					url: "http://www.computercraft.info/forums2/index.php?/topic/13187-unobtaniums-program-collection/"
+					url: "https://web.archive.org/web/20230212194441/http://www.computercraft.info/forums2/index.php?/topic/13187-unobtaniums-program-collection/"
 				}
 			],
 			images: [
