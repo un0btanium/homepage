@@ -1,10 +1,10 @@
 var data = {
 	projects: [
 		{
-			title: "Hell is Others - Interactive Maps",
+			title: "Interactive Overview Website - Hell is Others",
 			date: "October & November 2022",
 			info: "JavaScript, React, SVG Canvas, Radix Tree search",
-			text: "An <b>interactive cheatsheet</b> website for the videogame Hell is Others. In the game the players enters a city that contains various locations of interest to do quests; with PvE and PvP mixed in. The website lets the player easily search for areas, NPCs, shops and loot; adding bookmarks for later use. I utilized a Radix Tree data structure for the search functionality and the SVG Canvas to draw the map.",
+			text: "An <b>interactive website</b> for the videogame Hell is Others; to <b>displaying various useful information as part of the game's ingame map</b>. In the game the players enters a city that contains various locations of interest to do quests; with PvE and PvP mixed in. The website lets the player <b>easily search</b> for areas, NPCs, shops and loot; <b>adding bookmarks</b> for later use. I utilized a <b>Radix Tree data structure for the search functionality</b> and the <b>SVG Canvas</b> to draw the map.",
 			links: [
 				{
 					website: "link",
@@ -21,7 +21,7 @@ var data = {
 			]
 		},
 		{
-			title: "Boid Simulation with QuadTree Optimization",
+			title: "Interactive Boid Simulation with QuadTree Optimization",
 			date: "October & November 2021",
 			info: "Javascript, p5",
 			text: "A simple <b>Boid flocking implementation</b> optimized with a <b>spatial partitioning Quadtree algorithm</b> to allow for better performance at larger scale simulations. For more varity, there are 5 kinds of boid species, differentiated by color. All boids try to avoid each other, while boids of the same color try to flock together. Most aspects of the simulation and Quadtree can be changed at runtime via sliders and checkboxes. Additional <b>debug modes</b> provides a view of the current Quadtree partitioning of the level as well as statistics to performance. The Quadtree can even be turned off to be able to compare the performance difference.",
@@ -56,10 +56,10 @@ var data = {
 			],
 		},
 		{
-			title: "Star Citizen - Road to Dynamic Server Meshing",
+			title: "Distributed Game Engine Overview - Star Citizen",
 			date: "June 2020 - July 2025",
-			info: "Prezi Presentation then Custom React Website - Overview of the Architecture of the Game Engine Networking System",
-			text: "I have been very excited about the technology that one day will be <b>Star Citizen's Dynamic Server Meshing</b>. However, back in 2020 I had trouble finding any great single source of information which gives a good overview and explanation of what it is and how CIG is planning to realize it and what the status currently is. Therefore, I took it upon myself, <b>researched all the information available</b> to us and created <b>a visual and textual explanation as an extensive Prezi presentation with over 100 individual slides</b> for everyone to check out and refer to. All the available information I was able to find can be found in the presentation making it a great source about Dynamic Server Meshing! The sources used were provided at the end of the presentation as well. I eventually migrated to a custom React website by utilizing the Puppeteer JS library to create a web scrape script to extract all text and images from the Prezi slides and saved them as markup text and png files.",
+			info: "Prezi Presentation then Custom React Website - Overview of the Architecture of the Game Engine's Networking System",
+			text: "I have been very excited about the technology that one day will be <b>Star Citizen's Dynamic Server Meshing</b>. However, back in 2020 I had trouble finding any great single source of information which gives a good overview and explanation of what it is and how CIG is planning to realize it and what the status currently is. Therefore, I took it upon myself, <b>researched all the information available</b> to us and created <b>a visual and textual explanation as an extensive Prezi presentation with over 100 individual slides</b> for everyone to check out and refer to. All the available information I was able to find can be found in the presentation making it a great source about Dynamic Server Meshing! The sources used were provided at the end of the presentation as well. I eventually <b>migrated to a custom React website by utilizing the Puppeteer JS library</b> to create a web scrape script to extract all text and images from the Prezi slides and saved them as markup text and png files.",
 			links: [
 				{
 					website: "link",
@@ -95,7 +95,7 @@ var data = {
 			isHighlight: true
 		},
 		{
-			title: "CodingBuddy",
+			title: "CodingBuddy - eLearning Excecution Highlighter",
 			date: "2019-2021",
 			info: "Java, JavaParser, Node.js, Express, MongoDB, React, Java Platform Debugger Architecture (JPDA)",
 			text: "This website <b>visualizes the execution of Java programs</b>. It allows programming students to write Java code and then provides them with <b>step-by-step statement highlighting</b> at runtime. The goal was to help programming novices to develop a much more <b>intuitive understanding about how the computer executes their code</b>. This project was made possible by creating a <b>custom debugger</b> by parsing the users Java program and <b>injecting custom code</b> at various Abstract Syntax Tree nodes. At runtime, that code calls custom functions which <b>log the execution of each statement</b>. The position information of statements from the parser was used to be able to correctly highlight the executed statement in the frontend editor. This project has been expanded upon to optionally display the <b>Stack and Heap memory information</b> of the Java Virtual Machine through the Java Platform Debugger Architecture (JPDA). This information could be useful for visualizing more advanced programming concepts and datastructures.",
@@ -143,10 +143,10 @@ var data = {
 			isHighlight: true
 		},
 		{
-			title: "Phasmophobia Cheatsheet",
+			title: "Interactive Overview Website - Phasmophobia",
 			date: "September 2020 - December 2022",
 			info: "JavaScript, React",
-			text: "An <b>interactive cheatsheet</b> website for the videogame Phasmophobia. In the game the players hunts ghosts by figuring out what type of ghost they are dealing with. They can narrow down their search through various paranormal activities like freezing temperatures, ghost writing, spirit box talking, etc. This website provides an simple overview over all ghost evidence and lets mark and rule out evidence to narrow down their search more easily.",
+			text: "An <b>interactive website</b> for the videogame Phasmophobia. In the game the players hunts ghosts by figuring out what type of ghost they are dealing with. They can narrow down their search through various paranormal activities like freezing temperatures, ghost writing, spirit box talking, etc. This website provides an <b>simple overview over all ghost evidence and lets mark and rule out evidence</b> to narrow down their search more easily.",
 			links: [
 				{
 					website: "link",
@@ -163,10 +163,10 @@ var data = {
 			]
 		},
 		{
-			title: "Teamfight Tactics Cheatsheet",
+			title: "Interactive Overview Website - LoL Teamfight Tactics",
 			date: "July - August 2019",
 			info: "JavaScript, React",
-			text: "An <b>interactive cheatsheet</b> for the League of Legends Teamfight Tactics gamemode. It allows the player to keep track of their items and champions by adding/removing them to then provides them with an overview of the options that they have available.",
+			text: "An <b>interactive website</b> for the League of Legends Teamfight Tactics gamemode. It allows the player to <b>keep track of their items and champions</b> by adding/removing them. This is then used to provide an <b>overview of the furher options</b> that they have available, e.g. which items they can combine and which champions synergize well with each other.",
 			links: [
 				{
 					website: "link",
