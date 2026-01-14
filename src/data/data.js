@@ -56,7 +56,7 @@ var data = {
 			],
 		},
 		{
-			title: "Distributed Game Engine Overview - Star Citizen",
+			title: "Distributed Simulated Game Engine Overview - Star Citizen",
 			date: "June 2020 - July 2025",
 			info: "Prezi Presentation then Custom React Website - Overview of the Architecture of the Game Engine's Networking System",
 			text: "I have been very excited about the technology that one day will be <b>Star Citizen's Dynamic Server Meshing</b>. However, back in 2020 I had trouble finding any great single source of information which gives a good overview and explanation of what it is and how CIG is planning to realize it and what the status currently is. Therefore, I took it upon myself, <b>researched all the information available</b> to us and created <b>a visual and textual explanation as an extensive Prezi presentation with over 100 individual slides</b> for everyone to check out and refer to. All the available information I was able to find can be found in the presentation making it a great source about Dynamic Server Meshing! The sources used were provided at the end of the presentation as well. I eventually <b>migrated to a custom React website by utilizing the Puppeteer JS library</b> to create a web scrape script to extract all text and images from the Prezi slides and saved them as markup text and png files.",
