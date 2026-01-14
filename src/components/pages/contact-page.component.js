@@ -10,7 +10,7 @@ export default class ContactPage extends Component {
 		return (<div className="contact-list">
 			<div className="links">
 
-				<a href="mailto:mariusgrebe@googlemail.com" target="_blank" rel="noopener noreferrer">
+				<a href="mailto:marius.grebe+hp@gmail.com" target="_blank" rel="noopener noreferrer">
 					<div className="link">
 						<div className="icon-box">
 							<FontAwesomeIcon
@@ -19,7 +19,7 @@ export default class ContactPage extends Component {
 								size="3x"
 							/>
 						</div>
-						<div className="text">mariusgrebe@gmail.com</div>
+						<div className="text">eMail</div>
 					</div>
 				</a>
 
@@ -32,7 +32,7 @@ export default class ContactPage extends Component {
 								size="3x"
 							/>
 						</div>
-						<div className="text">xing.com/profile/Marius_Grebe2/cv</div>
+						<div className="text">Xing</div>
 					</div>
 				</a>
 
@@ -45,7 +45,7 @@ export default class ContactPage extends Component {
 								size="3x"
 							/>
 						</div>
-						<div className="text">linkedin.com/in/marius-grebe-1a057a1b8/</div>
+						<div className="text">LinkedIn</div>
 					</div>
 				</a>
 

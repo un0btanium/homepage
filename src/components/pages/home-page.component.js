@@ -57,7 +57,7 @@ export default class HomePage extends Component {
 							GitHub
 						</div>
 					</a>
-					<Link to="/homepage/projects" className="box">
+					<Link to="/projects" className="box">
 						<FontAwesomeIcon
 							icon={faFolderOpen}
 							style={{margin: '10px auto 20px auto'}}
@@ -67,7 +67,7 @@ export default class HomePage extends Component {
 							Projects
 						</div>
 					</Link>
-					<Link to="/homepage/highlights" className="box">
+					<Link to="/highlights" className="box" onClick={ () => { this.setState({ titleText: "HIGHLIGHTS" }); }}>
 						<FontAwesomeIcon
 							icon={faStar}
 							style={{margin: '10px auto 20px auto'}}
@@ -77,7 +77,7 @@ export default class HomePage extends Component {
 							Highlights
 						</div>
 					</Link>
-					<Link to="/homepage/contact" className="box">
+					<Link to="/contact" className="box">
 						<FontAwesomeIcon
 							icon={faAddressCard}
 							style={{margin: '10px auto 20px auto'}}

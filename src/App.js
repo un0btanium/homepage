@@ -25,18 +25,15 @@ const VARIANT = "light"; // dark, light
 
 class App extends Component {
 
-
   	constructor(props) {
 		super()
 
 		this.state = {
 			titleText: "WELCOME"
 		};
-
 	}
 
   	render() {
-
 		return (
 			<Router>
             	<Particles
@@ -44,22 +41,25 @@ class App extends Component {
 					params={particles}
 				/>
 				
-				<div className="hideOnSmallScreens">
-					<div style={{ textAlign: 'center', paddingTop: '75px', paddingBottom: '45px' }}>
-						<h2 style={{ fontSize: '3em', fontWeight: '900', fontFamily: "Raleway" }}><span style={{ color: '#0377fc'}}>MARIUS</span> <span style={{ color: '#c9711e'}}>GREBE</span></h2>
-						<p style={{ fontSize: '5em', fontWeight: '100', color: 'white' }}>{this.state.titleText}</p>
-					</div>
+				<div className="header-text">
+						<div style={{ textAlign: 'center', paddingTop: '75px', paddingBottom: '45px' }}>
+							<Nav.Link className="header-text" style={{cursor: 'pointer' }} as={Link} variant="light" to="/homepage/" onClick={ () => { this.setState({ titleText: "WELCOME" }); }}>
+								<h2 style={{ fontSize: '3em', fontWeight: '900', fontFamily: "Raleway" }}><span style={{ color: '#0377fc'}}>MARIUS</span> <span style={{ color: '#c9711e'}}>GREBE</span></h2>
+							</Nav.Link>
+							<p style={{ fontSize: '5em', fontWeight: '100', color: 'white' }}>{this.state.titleText}</p>
+						</div>
+					
 				</div>
 
-				<div className="full-screenable-node">
+				<div className="full-screenable-node hideOnSmallScreens">
 					<Navbar className="py-sm-4" bg={BG} variant={VARIANT} expand="sm" style={{ boxShadow: '0px 0px 8px #000000', fontFamily: "Consolas, 'New Courier', Courier, monospace", fontSize: '1.3em'}}>
 						<Navbar.Toggle aria-controls="basic-navbar-nav" />
 						<Navbar.Collapse id="basic-navbar-nav">
 							<Nav style={{ margin: "auto"}}>
-								<NavItem className="px-sm-4 text-uppercase text-expanded"><Nav.Link as={Link} variant="light" to="/homepage/" onClick={ () => { this.setState({ titleText: "WELCOME" }); }}><b>Home</b></Nav.Link></NavItem>
-								<NavItem className="px-sm-4 text-uppercase text-expanded"><Nav.Link as={Link} variant="light" to="/homepage/highlights"  onClick={ () => { this.setState({ titleText: "HIGHLIGHTS" }); }}><b>Highlights</b></Nav.Link></NavItem>
-								<NavItem className="px-sm-4 text-uppercase text-expanded"><Nav.Link as={Link} variant="light" to="/homepage/projects"  onClick={ () => { this.setState({ titleText: "PROJECTS" }); }}><b>All Projects</b></Nav.Link></NavItem>
-								<NavItem className="px-sm-4 text-uppercase text-expanded"><Nav.Link as={Link} variant="light" to="/homepage/contact"  onClick={ () => { this.setState({ titleText: "CONTACT" }); }}><b>Contact</b></Nav.Link></NavItem>
+								<NavItem className="px-sm-4 text-uppercase text-expanded"><Nav.Link as={Link} variant="light" to="/" onClick={ () => { this.setState({ titleText: "WELCOME" }); }}><b>Home</b></Nav.Link></NavItem>
+								<NavItem className="px-sm-4 text-uppercase text-expanded"><Nav.Link as={Link} variant="light" to="/highlights"  onClick={ () => { this.setState({ titleText: "HIGHLIGHTS" }); }}><b>Highlights</b></Nav.Link></NavItem>
+								<NavItem className="px-sm-4 text-uppercase text-expanded"><Nav.Link as={Link} variant="light" to="/projects"  onClick={ () => { this.setState({ titleText: "PROJECTS" }); }}><b>All Projects</b></Nav.Link></NavItem>
+								<NavItem className="px-sm-4 text-uppercase text-expanded"><Nav.Link as={Link} variant="light" to="/contact"  onClick={ () => { this.setState({ titleText: "CONTACT" }); }}><b>Contact</b></Nav.Link></NavItem>
 							</Nav>
 						</Navbar.Collapse>
 					</Navbar>
@@ -67,19 +67,19 @@ class App extends Component {
 				
 				<Switch>
 					<Route exact
-						path="/homepage/"
+						path="/"
 						render={(props) => <HomePage {...props} {...this.state} />}
 					/>
 					<Route exact
-						path="/homepage/highlights"
+						path="/highlights"
 						render={(props) => <HighlightsPage {...props}/>}
 					/>
 					<Route exact
-						path="/homepage/projects"
+						path="/projects"
 						render={(props) => <ProjectsPage {...props}/>}
 					/>
 					<Route exact
-						path="/homepage/contact"
+						path="/contact"
 						render={(props) => <ContactPage {...props}/>}
 					/>
 					<Route render={(props) => <HomePage {...props}

@@ -99,12 +99,6 @@ code {
 }
 
 
-@media screen and (max-width: 575px) {
-	.hideOnSmallScreens {
-		display: none !important;
-	}
-}
-
 
 
 #particle-background {
@@ -163,7 +157,27 @@ code {
 }
 
 
-@media screen and (max-width: 575px) {
+.header-text {
+	cursor: default !important;
+}
+
+@media screen and (max-width: 680px) {
+	.hideOnSmallScreens {
+		display: none !important;
+	}
+	
+	.header-text h2 {
+		font-size: 2.5em !important;
+	}
+	.header-text p {
+		font-size: 3.5em !important;
+	}
+
+	.introduction-text .introduction {
+		font-size: medium !important;
+		margin: 20px 25px 20px 25px;
+	}
+
 	.info-box {
 		margin: 25px;
 	}
@@ -177,6 +191,7 @@ code {
 		font-size: 2em;
 	}
 }
+
 
 @media screen and (max-width: 1300px) {
 	
@@ -205,10 +220,15 @@ code {
 	.image-slider {
 		margin: 5px 20px 20px 20px;
 	}
+
+	.contact-list {
+		width: 90% !important;
+	}
 }
 
 
-@media screen and (min-width: 575px) and (max-width: 1300px)  {
+
+@media screen and (min-width: 680px) and (max-width: 1300px)  {
 	.info-box {
 		margin: 50px;
 	}
@@ -550,7 +570,7 @@ code {
 
 
 .introduction-text {
-	margin: 60px 0px 60px 0px;
+	margin: 60px 25px 60px 25px;
 }
 
 .introduction-text .introduction {
@@ -562,7 +582,17 @@ code {
 }
 
 
+@media screen and (max-width: 680px) {
+	.education-container .education {
+		flex-flow: column-reverse nowrap;
+	}
+}
 
+@media screen and (min-width: 680px) {
+	.education-container .education {
+		flex-flow: row nowrap;
+	}
+}
 
 .education-container {
 	background-color: #adb6c2;
@@ -573,7 +603,6 @@ code {
 .education-container .education {
 	display: flex;
 	max-width: 500px;
-	flex-flow: row nowrap;
 	margin: auto;
 }
 
@@ -583,11 +612,24 @@ code {
 	padding: 15px;
 	border-radius: 10px;
 	min-width: 175px;
-	background-color: #0377fc;
+	background-color: #c9711e;
 	color: white;
 	font-size: medium;
 	font-weight: bold;
-	margin: auto;
+	margin: 10px auto;
+}
+
+
+@media screen and (max-width: 680px) {
+	.links-container .links {
+		flex-flow: column-reverse nowrap;
+	}
+}
+
+@media screen and (min-width: 680px) {
+	.links-container .links {
+		flex-flow: row nowrap;
+	}
 }
 
 
@@ -600,27 +642,31 @@ code {
 .links-container .links {
 	display: flex;
 	max-width: 800px;
-	flex-flow: row nowrap;
 	margin: auto;
 }
 
 .links-container .links .box {
 	display: flex;
 	flex-flow: column nowrap;
-	background-color: #c9711e;
+	background-color: #0377fc;
 	padding: 15px;
 	min-width: 125px;
 	border-radius: 10px;
 	color: white;
 	font-size: medium;
 	font-weight: bold;
-	margin: auto;
+	margin: 20px auto;
 }
 
 
 .contact-list {
-	width: 60%;
+	width: 40%;
 	margin: auto;
+}
+
+.contact-list a {
+	color: #007bff;
+	font-weight: 600;
 }
 
 .contact-list .links {
@@ -639,7 +685,6 @@ code {
 	margin: 20px;
 	background-color: #cad3e0;
 	border-radius: 25px;
-	
 }
 
 .contact-list .links .link .text {

@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
 
-
 import InfoBox from '../info-box.component';
-
 import data from '../../data/data';
 
-export default class ProjectsPage extends Component {
+export default class HighlightsPage extends Component {
 	
 	render () {
 		let infoBoxes = [];

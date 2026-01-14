@@ -145,7 +145,6 @@ export default class InfoBox extends Component {
 											{ this.state.selectedImage &&
 												<img
 													src={require("../../public/assets/images/"+this.state.selectedImage)}
-											
 													key={this.props.data.title ? this.props.data.title + " Image " : "Large Image"}
 													alt={this.props.data.title ? this.props.data.title + " Image " : "Large Image"}
 												/>
