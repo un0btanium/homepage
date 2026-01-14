@@ -95,7 +95,7 @@ var data = {
 			isHighlight: true
 		},
 		{
-			title: "CodingBuddy - eLearning Excecution Highlighter",
+			title: "CodingBuddy - eLearning Execution Highlighter",
 			date: "2019-2021",
 			info: "Java, JavaParser, Node.js, Express, MongoDB, React, Java Platform Debugger Architecture (JPDA)",
 			text: "This website <b>visualizes the execution of Java programs</b>. It allows programming students to write Java code and then provides them with <b>step-by-step statement highlighting</b> at runtime. The goal was to help programming novices to develop a much more <b>intuitive understanding about how the computer executes their code</b>. This project was made possible by creating a <b>custom debugger</b> by parsing the users Java program and <b>injecting custom code</b> at various Abstract Syntax Tree nodes. At runtime, that code calls custom functions which <b>log the execution of each statement</b>. The position information of statements from the parser was used to be able to correctly highlight the executed statement in the frontend editor. This project has been expanded upon to optionally display the <b>Stack and Heap memory information</b> of the Java Virtual Machine through the Java Platform Debugger Architecture (JPDA). This information could be useful for visualizing more advanced programming concepts and datastructures.",
